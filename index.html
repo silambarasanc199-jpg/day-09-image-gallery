@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Responsive interactive image gallery built using HTML, CSS Grid and JavaScript."
+    >
+
+    <title>WanderGallery | Day 09</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Wander<span>Gallery</span>
+            </div>
+
+            <div class="task-badge">
+                DAY 09
+            </div>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                INTERNSHIP PROJECT • IMAGE GALLERY
+            </p>
+
+            <h1>
+                Explore beautiful<br>
+                <span>moments.</span>
+            </h1>
+
+            <p class="hero-description">
+                A responsive and interactive image gallery
+                created with HTML, CSS Grid and JavaScript.
+            </p>
+
+            <a href="#gallery" class="explore-btn">
+                Explore Gallery
+                <span>↓</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-top">
+
+                <div>
+                    <p class="section-label">
+                        CURATED COLLECTION
+                    </p>
+
+                    <h2>
+                        Discover the world
+                    </h2>
+                </div>
+
+                <p class="image-count">
+                    <span id="imageCount">10</span> Images
+                </p>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="nature"
+                >
+                    Nature
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="travel"
+                >
+                    Travel
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="adventure"
+                >
+                    Adventure
+                </button>
+
+            </div>
+
+
+            <!-- ================= GALLERY GRID ================= -->
+
+            <div class="gallery" id="galleryGrid">
+
+
+                <!-- IMAGE 1 -->
+
+                <article
+                    class="gallery-card featured"
+                    data-category="nature"
+                    data-title="Mountain Escape"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85"
+                        alt="Mountain landscape surrounded by nature"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Mountain Escape</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Mountain Escape"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="Ocean View"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Blue ocean meeting a sandy beach"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Travel</span>
+                            <h3>Ocean View</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Ocean View"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Forest Light"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Sunlight passing through a green forest"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Forest Light</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Forest Light"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 4 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="Peaceful Lake"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Peaceful lake surrounded by mountains and trees"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Travel</span>
+                            <h3>Peaceful Lake</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Peaceful Lake"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 5 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="adventure"
+                    data-title="Snow Peaks"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                        alt="Snow covered mountain peaks"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Adventure</span>
+                            <h3>Snow Peaks</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Snow Peaks"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 6 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Green Valley"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Green valley filled with trees"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Green Valley</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Green Valley"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 7 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="Open Fields"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Wide green field beneath a blue sky"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Travel</span>
+                            <h3>Open Fields</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Open Fields"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 8 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="adventure"
+                    data-title="Golden Sunset"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+                        alt="Golden sunset over a scenic landscape"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Adventure</span>
+                            <h3>Golden Sunset</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Golden Sunset"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 9 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="adventure"
+                    data-title="Into the Wild"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Traveler exploring a mountain landscape"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Adventure</span>
+                            <h3>Into the Wild</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Into the Wild"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 10 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Into the Woods"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85"
+                        alt="Sunlight shining through tall forest trees"
+                        loading="lazy"
+                    >
+
+                    <div class="card-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Into the Woods</h3>
+                        </div>
+
+                        <button
+                            class="view-btn"
+                            aria-label="View Into the Woods"
+                        >
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            class="close-btn"
+            id="closeBtn"
+            aria-label="Close image preview"
+        >
+            ×
+        </button>
+
+
+        <button
+            class="navigation prev"
+            id="prevBtn"
+            aria-label="Previous image"
+        >
+            ‹
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="previewImage"
+                src=""
+                alt=""
+            >
+
+            <div class="preview-info">
+
+                <div>
+                    <span id="previewCategory">
+                        Category
+                    </span>
+
+                    <h2 id="previewTitle">
+                        Image Title
+                    </h2>
+                </div>
+
+                <p>
+                    <span id="currentNumber">1</span>
+                    /
+                    <span id="totalNumber">10</span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="navigation next"
+            id="nextBtn"
+            aria-label="Next image"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                Wander<span>Gallery</span>
+            </div>
+
+            <p>
+                Day 09 • Internship Web Development Task
+            </p>
+
+            <p class="footer-tech">
+                HTML5 • CSS3 Grid • JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
